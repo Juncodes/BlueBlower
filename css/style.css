@@ -74,7 +74,7 @@ body, html {
 body {
     line-height: 24px;
     color: #323232;
-    font-size: 13px;
+    font-size: 15px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
@@ -106,7 +106,7 @@ a {
 }
 
     a:hover {
-        color: #e6ae49;
+        color: #2c7aff;
         text-decoration: none;
         transition: all 0.25s ease 0s;
         -moz-transition: all 0.25s ease 0s;
@@ -1318,7 +1318,7 @@ form label.error {
 .header.header-light .nav-menu ul.nav-menu-inner > li > a:hover,
 .header.header-prepare .nav-menu ul.nav-menu-inner li a.current,
 .header.header-prepare .nav-menu ul.nav-menu-inner li.current a {
-    color: #e6ae49;
+    color: #2c7aff;
 }
 
 /* Mobile bar icon */
@@ -3524,7 +3524,7 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
     }
 
 .project-detail-block p {
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
@@ -3883,7 +3883,7 @@ ul.project-detail-block, .project-detail-block ul {
 }
 
     .shop-item-info a:hover, .shop-item-info a:hover h5, .shop-item-info a:hover h6, .shop-item-name:hover {
-        color: #e6ae49;
+        color: #2c7aff;
         transition: all 0.25s ease 0s;
         -moz-transition: all 0.25s ease 0s;
         -webkit-transition: all 0.25s ease 0s;
@@ -3920,7 +3920,7 @@ ul.project-detail-block, .project-detail-block ul {
 
 .shop-detail-info .shop-item-price {
     font-size: 20px;
-    color: #e6ae49;
+    color: #e8a830;
     font-weight: 600;
 }
 
