@@ -814,9 +814,9 @@ button.ui-button::-moz-focus-inner {
 	margin-bottom: -1px;
 	padding-bottom: 1px;
     background:#fff;
-    border-top:1px solid #f1f1f1;
-    border-left:1px solid #f1f1f1;
-    border-right:1px solid #f1f1f1;
+    border-top:3px solid #e8a830;
+    border-left:1px solid #ccc;
+    border-right:1px solid #ccc;
     border-bottom:none;
 }
 .ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor,
@@ -825,7 +825,7 @@ button.ui-button::-moz-focus-inner {
 	cursor: text;
 }
 .ui-tab-content {
-    border:1px solid #f1f1f1;
+    border:1px solid #ccc;
     margin-top: -1px;
 }
 .ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {

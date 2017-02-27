@@ -46,7 +46,9 @@
   - Preloader
   - Additional
 */
-
+/*-------------------------------------------------------------------------------------------*/
+/* BASIC STYLE    ||---------------------------- */
+/*-------------------------------------------------------------------------------------------*/
 
 /*-------------------------------------------------------------------------------------------*/
 /* BASIC STYLE    ||---------------------------- */
@@ -106,7 +108,7 @@ a {
 }
 
     a:hover {
-        color: #2c7aff;
+        color: #323232;
         text-decoration: none;
         transition: all 0.25s ease 0s;
         -moz-transition: all 0.25s ease 0s;
@@ -130,15 +132,19 @@ br {
 hr {
     margin-bottom: 0px;
     margin-top: 0px;
-    border-top: 1px solid #f1f1f1;
+    border-top: 1px solid #ededed;
     border-bottom: none;
     border-left: none;
     border-right: none;
 }
 
-    hr.dark {
-        border-top: 1px solid #3e3e3e;
-    }
+hr.dark {
+    border-top: 1px solid #3e3e3e;
+}
+
+b {
+	font-size: 18px;
+}
 
 b, strong {
     font-weight: 600;
@@ -179,10 +185,10 @@ ul.text-cap li, .text-cap {
 
 p {
     line-height: 20px;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 300;
     margin: 0px 0 10px 0;
-    color: #888;
+    color: #000000;
     letter-spacing: 1px;
 }
 
@@ -301,7 +307,7 @@ h2 {
 }
 
 h3 {
-    font-size: 21px;
+    font-size: 24px;
     letter-spacing: 4px;
     line-height: 32px;
 }
@@ -695,8 +701,9 @@ form label.error {
 }
 
 .ptb {
-    padding-top: 110px;
+    padding-top: 180px;
     padding-bottom: 110px;
+    margin: 0 100px;
 }
 
 .pt {
@@ -710,6 +717,9 @@ form label.error {
 .ptb-15 {
     padding-top: 15px;
     padding-bottom: 15px;
+}
+.desc-item {
+	padding-top: 30px;
 }
 
 .pt-15 {
@@ -1100,6 +1110,7 @@ form label.error {
     -o-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
     -moz-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
     -webkit-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
+    border-bottom: 1px solid #e7e7e7;
 }
 
     .header.header-prepare, .header.header-light.header-prepare {
@@ -1117,7 +1128,7 @@ form label.error {
     .header.header-fixed {
         display: block;
         margin-top: 0 !important;
-        position: fixed;
+
         height: 64px;
     }
 
@@ -1128,8 +1139,8 @@ form label.error {
 }
 
 .header-fixed .logo a {
-    width: 115px;
-    margin-top: 23px;
+    width: 150px;
+    margin-top: 10px;
     /*margin-bottom: 15px;*/
     transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
     -o-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
@@ -1221,9 +1232,9 @@ form label.error {
 }
 
     .logo a {
-        width: 132px;
+        width: 150px;
         display: block;
-        margin-top: 34px;
+        margin-top: 25px;
         /*margin-bottom: 28px;*/
         transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
         -o-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
@@ -1284,7 +1295,7 @@ form label.error {
 .nav-menu ul.nav-menu-inner li a {
     font-family: inherit;
     display: block;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1;
     font-weight: 600;
     text-transform: uppercase;
@@ -1311,14 +1322,14 @@ form label.error {
 .header.header-dark .nav-menu ul.nav-menu-inner > li > a:hover,
 .header.header-dark.header-prepare .nav-menu ul.nav-menu-inner li a.current,
 .header.header-dark.header-prepare .nav-menu ul.nav-menu-inner li.current a {
-    color: #e6ae49;
+    color: #0090ff;
 }
 
 .header.header-light .nav-menu ul.nav-menu-inner > li:hover > a,
 .header.header-light .nav-menu ul.nav-menu-inner > li > a:hover,
 .header.header-prepare .nav-menu ul.nav-menu-inner li a.current,
 .header.header-prepare .nav-menu ul.nav-menu-inner li.current a {
-    color: #2c7aff;
+    color: #0090ff;
 }
 
 /* Mobile bar icon */
@@ -2002,10 +2013,6 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
     margin-bottom:0;*/
 }
 
-.sc-button {
-}
-
-
 /*==============================================================================================*/
 /* FOOTER         ||---------------------------- */
 /*==============================================================================================*/
@@ -2016,6 +2023,7 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
     position: relative;
     width: 100%;
     display: block;
+    padding-bottom: 30px;
 }
 
     .footer hr {
@@ -2036,10 +2044,13 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
     font-size: 20px;
 }
 
+ul.social, 
 .footer ul {
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
+	padding-left: 0;
+	list-style: none;
+}
+ul.social {
+	margin-top: 30px;
 }
 
     .footer ul.social li, .contact ul.social li {
@@ -2062,7 +2073,18 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
 .footer .copyright {
     text-align: center;
 }
-
+.logo-container {
+	overflow-x: hidden;
+	max-width: 100%;
+}
+.logo-item {
+	position: relative;
+	left: 50%;
+}
+.logo-item img {
+	width: 200px;
+	height: 50px;
+}
 
 .newsletter {
     position: relative;
@@ -2084,11 +2106,34 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
         font-size: 18px;
         background: rgba(255,255,255,0);
     }
-
-@media (max-width: 767px) {
+.sns {
+	margin-right: 15px;
+}
+.sns:hover {
+	color: #0090ff;
+}
+.col-md-offset-2 {
+	margin-left: 0;
+}
+.col-md-3 {
+	padding: 0 100px;
+}
+.footer-info {
+		width: 100%;
+		
+} 
+@media (max-width: 991px) and (min-width: 320px) {
     .footer {
         text-align: center;
     }
+    .logo-item {
+		position: relative;
+		left: 0%;
+	}
+	.footer-info {
+		width: 100%;
+		overflow: hidden;
+	}
 }
 /*================================================================================================*/
 /* ELEMENTS          ||---------------------------- */
@@ -3247,7 +3292,7 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
 }
 /* ----------------------------------------------------------------------*/
 /* Sidebar Widget   ---------------------------------------------------- */
-/* ----------------------------------------------------------------------*/
+/* ----------------------------------------------------------------------
 
 .sidebar-widget {
     margin-bottom: 50px;
@@ -3646,10 +3691,10 @@ ul.project-detail-block, .project-detail-block ul {
 
 /* ----------------------------------------------------------------------*/
 /* Blog   --------------------------------------------------------- */
-/* ----------------------------------------------------------------------*/
+/* ---------------------------------------------------------------------- */
 /*.blog-post {
     position: relative;
-}*/
+}
 .blog-post {
     display: inline-block;
     width: 100%;
@@ -3883,7 +3928,7 @@ ul.project-detail-block, .project-detail-block ul {
 }
 
     .shop-item-info a:hover, .shop-item-info a:hover h5, .shop-item-info a:hover h6, .shop-item-name:hover {
-        color: #2c7aff;
+        color: #0090ff;
         transition: all 0.25s ease 0s;
         -moz-transition: all 0.25s ease 0s;
         -webkit-transition: all 0.25s ease 0s;
@@ -4454,7 +4499,7 @@ ul.project-detail-block, .project-detail-block ul {
 }
 
     .scroll-top:hover {
-        background: #e6ae49;
+        background: #0090ff;
         text-decoration: none;
         color: #fff;
     }
@@ -4465,3 +4510,5 @@ ul.project-detail-block, .project-detail-block ul {
         visibility: hidden;
     }
 }
+ 
+

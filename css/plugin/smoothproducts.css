@@ -26,12 +26,16 @@ html, body {
 .sp-thumbs img {
     width:90px;
     padding: 15px;
-    /*height:50px;*/
+    /* height:50px; */
+    vertical-align: bottom;
 }
 .sp-thumbs a:link, .sp-thumbs a:visited {
     opacity:.4;
     display:inline-block;
-    margin:0 5px;
+    padding:0 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     -webkit-transition: all .2s ease-out;
     -moz-transition: all .2s ease-out;
     -ms-transition: all .2s ease-out;
@@ -61,6 +65,8 @@ html, body {
     overflow:hidden;
     top:0;
     left:0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 .sp-large a img {
     max-width:100%;
