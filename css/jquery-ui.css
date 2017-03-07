@@ -814,7 +814,7 @@ button.ui-button::-moz-focus-inner {
 	margin-bottom: -1px;
 	padding-bottom: 1px;
     background:#fff;
-    border-top:3px solid #e8a830;
+    border-top:3px solid #ff4a4a;
     border-left:1px solid #ccc;
     border-right:1px solid #ccc;
     border-bottom:none;
